@@ -1,0 +1,161 @@
+:root {
+    --border-colour: red;
+    --text-colour: black;
+    --background-color: whitesmoke;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-color);
+    color: var(--text-colour);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    height: 100vh;
+}
+
+div {
+    border: 1px solid var(--border-colour);
+}
+
+/* Left side */
+#side {
+    min-width: 350px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("giang-nguyen-Q4hdnovzmok-unsplash.jpg");
+    background-size: 700px;
+    height: 100vh;
+}
+
+#logo {
+    height: max(150px, 20vh);
+    margin-top: 30vh;
+    width: max(350px, 100%);
+    background-color: rgba(0,0,0,.5);
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo>h1 {
+    background-color: transparent;
+}
+
+#footer {
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#footer>a {
+    color: whitesmoke;
+}
+
+a {
+    color: var(--text-colour);
+    background-color: transparent;
+}
+
+a:hover {
+    color: green;
+    font-weight: 900;
+}
+
+
+/* Right side */
+#main-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#top {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#top > p {
+    font-size: 24px;
+    font-weight: 900;
+    width: 60%;
+    text-align: left;
+    margin: auto;
+    margin-top: 16px;;
+}
+
+#main {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    width: 60%;
+    font-size: large;
+}
+
+legend {
+    width: 60%;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+}
+
+li label {
+    min-width: max(170px, 20%);
+    margin: 5px;
+}
+
+li input {
+    min-width: max(200px, 25%);
+    margin: 5px;
+}
+
+#bottom {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+#bottom>div {
+    width: 60%;
+    margin: auto;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid green;
+}
+
+button:hover {
+    background-color: green;
+    color: whitesmoke;
+}
