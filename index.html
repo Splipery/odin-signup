@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
     <title>Sign Up!</title>
 </head>
 <body>
@@ -27,35 +30,48 @@
             </div>
             <div id="main">
                 <form action="#" method="post">
-                    <ul>
-                        <legend>Let's do this!</legend>
-                        <li>
-                            <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" id="firstName">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" id="lastName">
-                        </li>
-                        <li>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
-                            <label for="phoen">Phone number</label>
-                            <input type="tel" name="phone" id="phoen">
-                        </li>
-                        <li>
-                            <label for="pw">Password</label>
-                            <input type="password" id="pw">
-                            <label for="pwConfirm">Confirm Password</label>
-                            <input type="password" id="pwConfirm">
-                        </li>
-                    </ul>
+
+                        <h3>Let's do this!</h3>
+                        
+                            <div class="input-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" name="firstName" id="firstName">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" name="lastName" id="lastName">
+                            </div>
+                    
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="phoen">Phone number</label>
+                                <input type="tel" name="phone" id="phoen">
+                            </div>
+                     
+                            <div class="input-group">
+                                <label for="pw">Password</label>
+                                <input type="password" id="pw">
+                            </div>
+
+                            <div class="input-group">
+                                <label for="pwConfirm">Confirm Password</label>
+                                <input type="password" id="pwConfirm">
+                            </div>
+
+                            <div class="button-group">
+                                <button>Create Account</button>
+                            </div>
                 </form>
             </div>
             <div id="bottom">
-                <div id="bcontainer">
-                    <button>Create Account</button>
-                    <p>Already have an account? <a href="#">Log In</a></p>
-                </div>
+                <p>Already have an account? <a href="#">Log In</a></p>
             </div>
+
         </div>
     </div>
 </body>

@@ -2,27 +2,32 @@
     --border-colour: red;
     --text-colour: black;
     --background-color: whitesmoke;
+    
 }
+
+@font-face {
+    font-family: my-cool-font;
+    src: url(Norse-Bold.otf);
+  }
 
 *{
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Plus Jakarta Sans', sans-serif, my-cool-font;/*'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     background-color: var(--background-color);
     color: var(--text-colour);
+
+    /*border: 1px solid var(--border-colour);*/
 }
 
 html, body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 #content {
+    box-sizing: border-box;
     display: flex;
-    height: 100vh;
-}
-
-div {
-    border: 1px solid var(--border-colour);
 }
 
 /* Left side */
@@ -35,6 +40,7 @@ div {
     background-image: url("giang-nguyen-Q4hdnovzmok-unsplash.jpg");
     background-size: 700px;
     height: 100vh;
+    position: sticky;
 }
 
 #logo {
@@ -50,6 +56,7 @@ div {
 
 #logo>h1 {
     background-color: transparent;
+    color: whitesmoke;
 }
 
 #footer {
@@ -95,7 +102,7 @@ a:hover {
     width: 60%;
     text-align: left;
     margin: auto;
-    margin-top: 16px;;
+    margin-top: 16px;
 }
 
 #main {
@@ -103,47 +110,37 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10%;
 }
 
 form {
-    width: 60%;
     font-size: large;
-}
-
-legend {
-    width: 60%;
-    margin: auto;
-}
-
-li {
-    list-style: none;
     display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: auto;
+    flex-flow: wrap;
+    gap: 20px;
+    padding: 20px;
+    box-shadow:  10px 10px 20px -5px var(--border-colour);
 }
 
-li label {
-    min-width: max(170px, 20%);
-    margin: 5px;
+form>h3 {
+    width: 100%;
 }
 
-li input {
-    min-width: max(200px, 25%);
-    margin: 5px;
-}
-
-#bottom {
-    flex: 2;
+.input-group {
+    width: 40%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.input-group * {
+    width: 40%;
+    min-width: 150px;
+    text-align: left;
     gap: 16px;
 }
 
-#bottom>div {
-    width: 60%;
-    margin: auto;
+.button-group {
+    width: 100%;
 }
 
 button {
@@ -158,4 +155,11 @@ button {
 button:hover {
     background-color: green;
     color: whitesmoke;
+}
+
+#bottom {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
 }
