@@ -1,0 +1,153 @@
+:root {
+    --border-color: red;
+    --light-text-color: whitesmoke;
+    --dark-text-color: black;
+}
+
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf);
+}
+
+*{
+    /*border: 1px solid var(--border-color);*/
+    color: var(--dark-text-color);
+    font-family: 'Plus Jakarta Sans', norse, sans-serif;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+#content {
+    box-sizing: border-box;
+    display: flex;
+    justify-items: center;
+    min-height: 100vh;
+}
+
+p.tocont {
+    margin-bottom: 0;
+}
+
+p.cont {
+    margin-top: 0;
+}
+
+#side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("giang-nguyen-Q4hdnovzmok-unsplash.jpg");
+    background-size: cover;
+}
+
+#logo {
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo>img {
+    max-width: 100px;
+    margin: auto;
+}
+
+#logo>h1 {
+    color: var(--light-text-color);
+    text-align: center;
+    margin: auto;
+}
+
+#main-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-evenly;*/
+    padding: 5%;
+}
+
+#top {
+    font-size: larger;
+}
+
+.inputs {
+    box-shadow: 0px 5px 5px 0px slategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+}
+
+.left-input, .right-input {
+    flex: 1;
+    display: flex;
+}
+
+label {
+    width: 30%;
+    min-width: 150px;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+input {
+    width: 50%;
+    min-width: 150px;
+    border: 1px solid gray;
+}
+
+input:focus {
+    border: 2px solid green;
+    box-shadow: 0px 0px 5px 0px green;
+}
+
+input:empty {
+    border: 1px solid gray;
+    box-shadow: none;
+}
+
+input:invalid {
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 0px red;
+}
+  
+input:valid {
+    border: 2px solid black;
+}
+
+.button-group {
+    width: 100%;
+}
+
+button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid green;
+}
+
+button:hover {
+    background-color: green;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: green;
+    font-weight: 900;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <div id="content">
         
         <div id="side">
-            <div id="logo"><h1>Matt</h1></div>
+            <div id="logo"><img src="odin-lined.png"><h1>Do you like FLOWERS?</h1></div>
             <div id="footer">Photo by 
                 <a href="https://unsplash.com/@jagtisda?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Giang Nguyen</a> 
                 on 
@@ -24,45 +24,50 @@
 
         <div id="main-container">
             <div id="top">
-                <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.</p>
-                <p>Sign up <em>now</em> to get started.</p>
+                <p class="tocont">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.</p>
+                <p class="cont">Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
             <div id="main">
                 <form action="#" method="post">
 
                         <h3>Let's do this!</h3>
-                        
-                            <div class="input-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" name="firstName" id="firstName">
-                            </div>
+                        <div class="inputs">
 
                             <div class="input-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" name="lastName" id="lastName">
+                                <div class="left-input">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" name="firstName" id="firstName" required minlength="2">
+                                </div>
+                                <div class="right-input">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" name="lastName" id="lastName" required minlength="2">
+                                </div>
                             </div>
                     
                             <div class="input-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-
-                            <div class="input-group">
-                                <label for="phoen">Phone number</label>
-                                <input type="tel" name="phone" id="phoen">
+                                <div class="left-input">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="right-input">
+                                    <label for="phoen">Phone number</label>
+                                    <input type="tel" name="phone" id="phoen" pattern="[0][0-9]{4} [0-9]{6}|[0][0-9]{4}[0-9]{6}|[0][0-9]{3} [0-9]{7}|[0][0-9]{3}[0-9]{7}|[07][0-9]{3}[0-9]{6}" required>
+                                </div>
                             </div>
                      
                             <div class="input-group">
-                                <label for="pw">Password</label>
-                                <input type="password" id="pw">
+                                <div class="left-input">
+                                    <label for="pw">Password</label>
+                                    <input type="password" id="pw" required>
+                                </div>
+                                <div class="right-input">
+                                    <label for="pwConfirm">Confirm Password</label>
+                                    <input type="password" id="pwConfirm" required>
+                                </div>
                             </div>
 
-                            <div class="input-group">
-                                <label for="pwConfirm">Confirm Password</label>
-                                <input type="password" id="pwConfirm">
-                            </div>
-
+                        </div>
                             <div class="button-group">
                                 <button>Create Account</button>
                             </div>
